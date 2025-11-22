@@ -78,21 +78,21 @@ The agent then recommends an appropriate next action.
 
 ### Request
 
-
-POST /triage
-
+**POST /triage**
 
 Example input:
 
-json
+```json
 {
   "description": "Checkout failing with error 500 when I try to pay on mobile."
 }
+```
 
+---
 
-### Example Output
+###  Example Output
 
-json
+```json
 {
   "summary": "Checkout failing with error 500 when I try to pay on mobile.",
   "category": "Bug",
@@ -109,9 +109,7 @@ json
   ],
   "suggested_action": "Known issue: Attach KB article and respond to the user."
 }
-
-
----
+```
 
 ## Local Setup
 
@@ -120,7 +118,7 @@ json
 * Python 3.10 or above
 * FastAPI
 * Uvicorn
-* (Optional) OpenAI API key for real LLM extraction
+* OpenAI API key for real LLM extraction
 
 ### Installation
 
@@ -144,48 +142,49 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## Configuration
+## Environment Variables
 
-You can set the following environment variables in a .env file:
+Create a `.env` file in the project root:
 
-
+```env
 OPENAI_API_KEY=your_api_key
 OPENAI_MODEL=gpt-4o-mini
+```
 
 
 If no API key is provided, the service runs in mock mode.
 
 ---
 
-## Testing
+## 🧪 Testing
 
 Basic tests are included. Run them using:
 
-
+```bash
 pytest
-
+```
 
 Tests cover:
 
-* A valid triage request
-* Empty description handling
-* Response shape validation
+- A valid triage request  
+- Empty description handling  
+- Response shape validation  
 
 ---
 
 ## Docker
 
-To build the container:
+### Build the container:
 
-
+```bash
 docker build -t triage-agent .
+```
 
+### Run the container:
 
-To run it:
-
-
+```bash
 docker run -p 8000:8000 triage-agent
-
+```
 
 ---
 
@@ -200,6 +199,4 @@ If deployed in a real environment, the following factors should be considered:
 * Adding authentication and rate limiting if exposed publicly
 * Ensuring retry logic and timeouts for LLM calls
 
----"# triage-agent" 
-"# triage-agent" 
-"# triage-agent" 
+---
