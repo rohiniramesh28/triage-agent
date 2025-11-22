@@ -211,7 +211,7 @@ If deployed in a real environment, the following factors should be considered:
 * Running the API in a containerized environment such as AWS ECS, GCP Cloud Run, or Azure Container Apps
 * Storing secrets using environment variables or a hosted secret manager
 * Adding structured logging and monitoring
-* Optionally using a more advanced similarity search (e.g., vector embeddings)
+* Optionally using a more advanced similarity search 
 * Adding authentication and rate limiting if exposed publicly
 * Ensuring retry logic and timeouts for LLM calls
 
