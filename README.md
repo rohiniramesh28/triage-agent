@@ -24,29 +24,32 @@ The agent can run in two modes:
 
 ## Project Structure
 
-"""
+```
 support-ticket-triage/
-│── app/
-│   ├── main.py        # FastAPI app
-│   └── router.py      # /triage route
+├── app/
+│   ├── main.py              # FastAPI app
+│   └── router.py            # /triage route
 │
-│── agent/
-│   └── triage_agent.py  # Orchestration logic
+├── agent/
+│   └── triage_agent.py      # Orchestration logic
 │
-│── kb/
-│   ├── kb.json        # Knowledge base entries
-│   └── search.py      # KB search + scoring
+├── kb/
+│   ├── kb.json              # Knowledge base entries
+│   └── search.py            # KB search + scoring
 │
-│── models/
-│   └── schemas.py     # Request/response Pydantic models
+├── models/
+│   └── schemas.py           # Pydantic models
 │
-│── tests/
-│   └── test_api.py    # Basic tests
+├── tests/
+│   └── test_api.py          # Basic tests
 │
-│── Dockerfile
-│── README.md
-│── requirements.txt
-"""
+├── .env                     # Environment variables
+├── .gitignore
+├── Dockerfile
+├── README.md
+└── requirements.txt
+```
+
 
 ---
 
