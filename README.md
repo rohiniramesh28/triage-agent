@@ -120,7 +120,7 @@ Example input:
 * Uvicorn
 * OpenAI API key for real LLM extraction
 
-### 🛠️ Installation (Windows)
+### Installation (Windows)
 
 Create a virtual environment:
 
@@ -142,14 +142,18 @@ pip install -r requirements.txt
 
 ### Running the Service
 
+Start the FastAPI server:
 
+```bash
 uvicorn app.main:app --reload
+```
 
+Open the interactive API docs:
 
-Open the interactive API docs at:
-
-
+```
 http://127.0.0.1:8000/docs
+```
+
 
 
 ---
