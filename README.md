@@ -24,6 +24,7 @@ The agent can run in two modes:
 
 ## Project Structure
 
+"""
 support-ticket-triage/
 │── app/
 │   ├── main.py        # FastAPI app
@@ -45,6 +46,7 @@ support-ticket-triage/
 │── Dockerfile
 │── README.md
 │── requirements.txt
+"""
 
 ---
 
