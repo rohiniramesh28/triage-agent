@@ -1,0 +1,86 @@
+[
+  {
+    "id": "ISSUE-101",
+    "title": "Checkout error 500 on mobile",
+    "category": "Bug",
+    "symptoms": ["500 error", "mobile", "checkout", "payment"],
+    "recommended_action": "Escalate to payments team; link incident INC-2023-09-10"
+  },
+  {
+    "id": "ISSUE-102",
+    "title": "Login failing with 401 for some users",
+    "category": "Login",
+    "symptoms": ["401", "login", "authentication", "token"],
+    "recommended_action": "Investigate auth token expiry; suggest clearing cookies and retry"
+  },
+  {
+    "id": "ISSUE-103",
+    "title": "Slow page load on product listing",
+    "category": "Performance",
+    "symptoms": ["slow", "page load", "product listing", "latency"],
+    "recommended_action": "Profile frontend assets and pagination; consider caching"
+  },
+  {
+    "id": "ISSUE-104",
+    "title": "Promo code not applying",
+    "category": "Billing",
+    "symptoms": ["promo code", "discount", "checkout"],
+    "recommended_action": "Verify promo rules in database and test in staging"
+  },
+  {
+    "id": "ISSUE-105",
+    "title": "App crashes on startup (Android 12)",
+    "category": "Bug",
+    "symptoms": ["crash", "startup", "android", "stacktrace"],
+    "recommended_action": "Collect crash logs and escalate to mobile team"
+  },
+  {
+    "id": "ISSUE-106",
+    "title": "Password reset email not received",
+    "category": "Login",
+    "symptoms": ["password reset", "email", "not received", "mailer"],
+    "recommended_action": "Check mailer service health and queue; resend"
+  },
+  {
+    "id": "ISSUE-107",
+    "title": "Order status incorrect in UI",
+    "category": "Bug",
+    "symptoms": ["order status", "UI", "stale", "sync"],
+    "recommended_action": "Check sync between orders DB and cache layer"
+  },
+  {
+    "id": "ISSUE-108",
+    "title": "How to change shipping address",
+    "category": "Question/How-To",
+    "symptoms": ["how to", "change address", "shipping"],
+    "recommended_action": "Attach KB article on changing shipping address"
+  },
+  {
+    "id": "ISSUE-109",
+    "title": "Unexpected 429 rate limit errors",
+    "category": "Performance",
+    "symptoms": ["429", "rate limit", "throttling"],
+    "recommended_action": "Investigate traffic spikes and rate limit settings"
+  },
+  {
+    "id": "ISSUE-110",
+    "title": "Invoice PDF corrupted for some customers",
+    "category": "Billing",
+    "symptoms": ["invoice", "pdf", "corrupt", "download"],
+    "recommended_action": "Re-generate invoice and check PDF generator service"
+  },
+  {
+    "id": "ISSUE-111",
+    "title": "Two-factor auth SMS delay",
+    "category": "Login",
+    "symptoms": ["2fa", "sms", "delay"],
+    "recommended_action": "Check SMS provider latency and fallback"
+  },
+  {
+    "id": "ISSUE-112",
+    "title": "Feature request: export orders CSV",
+    "category": "Question/How-To",
+    "symptoms": ["export", "orders", "csv", "feature request"],
+    "recommended_action": "Log as product improvement request"
+  }
+]
