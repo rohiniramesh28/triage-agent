@@ -172,7 +172,7 @@ If no API key is provided, the service runs in mock mode.
 
 ---
 
-## 🧪 Testing
+## Testing
 
 Basic tests are included. Run them using:
 
