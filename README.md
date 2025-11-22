@@ -120,13 +120,25 @@ Example input:
 * Uvicorn
 * OpenAI API key for real LLM extraction
 
-### Installation
+### 🛠️ Installation (Windows)
 
+Create a virtual environment:
 
+```bash
 python -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+```
 
+Activate it:
+
+```bash
+.venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
 
 ### Running the Service
 
